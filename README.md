@@ -1,8 +1,8 @@
-# Create pdf figures using the TikZ/pgf LaTeX package
+# Create pdf figures using the Ti*k*Z/pgf LaTeX package
 
-tikzfig is a Matlab toolbox to programmatically create figure files in pdf format using the [Ti*k*Z/pgf LaTeX package](https://ctan.org/pkg/pgf?lang=en). It exposes part of the TikZ interface to pgf as a Matlab API, so that graphics statements lead to the construction of a LaTeX file which is transparently processed into pdf, including a simple preview mechanism. Additionally, functionality to easily create multi-panel figure layouts is provided.
+tikzfig is a Matlab toolbox to programmatically create figure files in pdf format using the [Ti*k*Z/pgf LaTeX package](https://ctan.org/pkg/pgf?lang=en). It exposes part of the Ti*k*Z interface to pgf as a Matlab API, so that graphics statements lead to the construction of a LaTeX file which is transparently processed into pdf, including a simple preview mechanism. Additionally, functionality to easily create multi-panel figure layouts is provided.
 
-I created this toolbox, because the capabilities of TikZ go far beyond what can be reasonably achieved with Matlab's graphics, both in versatility and quality. To get an impression, have a look at [TikZ and PGF examples on texample.net](http://www.texample.net/tikz/examples/all/). The drawback is that this toolbox as well as TikZ/pgf itself cannot be used interactively, for fast prototyping. It's purpose is to produce high-quality publication-ready figures.
+I created this toolbox, because the capabilities of Ti*k*Z go far beyond what can be reasonably achieved with Matlab's graphics, both in versatility and quality. To get an impression, have a look at [Ti*k*Z and PGF examples on texample.net](http://www.texample.net/tikz/examples/all/). The drawback is that this toolbox as well as Ti*k*Z/pgf itself cannot be used interactively, for fast prototyping. It's purpose is to produce high-quality publication-ready figures.
 
 
 ## Installation
@@ -62,19 +62,19 @@ The file `hello.pdf` is created in the current directory:
 ## Usage
 
 The basic structure of a tikzfig script is
--   `tfInit`: initialize TikZ figure
+-   `tfInit`: initialize Ti*k*Z figure
 -   style commands
--   `tfLayout`: organize the layout of a TikZ figure using boxes (views) arranged over a grid
+-   `tfLayout`: organize the layout of a Ti*k*Z figure using boxes (views) arranged over a grid
 -   for each view:
     -   `tfView`: prepare layout box as current view
     -   optionally `tfIsoView`: impose isoscaling on the current view
     -   plot commands
     -   optionally `tfDeco`: draw decorations for the current view
--   `tfRender`: render TikZ figure to pdf file and show a preview
+-   `tfRender`: render Ti*k*Z figure to pdf file and show a preview
 
 Style commands:
 -   `tfColor`: define color for later use in drawing or filling
--   `tfStyle`: define TikZ style for later use in options
+-   `tfStyle`: define Ti*k*Z style for later use in options
 
 Plot commands:
 -   `tfPath`: insert path in current view
@@ -89,10 +89,10 @@ Plot commands:
 -   `tfGrid`: draw a coordinate grid into the current view
              
 Helper functions:
--   `tfPrintCode`: print TikZ code
+-   `tfPrintCode`: print Ti*k+Z code
 -   `tfLimits`: compute fitting view limits for discretely sampled data (e.g. images)
 
-All functions include additional usage information which is accessible via Matlab's `help` command. To use this toolbox effectively, you should however familiarize yourself with TikZ itself.
+All functions include additional usage information which is accessible via Matlab's `help` command. To use this toolbox effectively, you should however familiarize yourself with Ti*k*Z itself.
 
 ***
 
