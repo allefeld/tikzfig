@@ -66,18 +66,18 @@ Style commands:
 -   `tfStyle`: define TikZ style for later use in options
 
 Plot commands:
-               tfPath - insert path in current view
-               tfPlot - plot data in current view
-            tfScatter - generate scatter plot in current view
-            tfHeatMap - display matrix as a heat map
-              tfImage - insert image into the current view
-            tfContour - display matrix as a contour plot
-            tfEllipse - draw an circle or ellipse in the current view
-              tfArrow - draw arrow
-           tfColorBar - fill pre-defined layout box with colorbar
-               tfGrid - draw a coordinate grid into the current view
+-   `tfPath`: insert path in current view
+-   `tfPlot`: plot data in current view
+-   `tfScatter`: generate scatter plot in current view
+-   `tfHeatMap`: display matrix as a heat map
+-   `tfImage`: insert image into the current view
+-   `tfContour`: display matrix as a contour plot
+-   `tfEllipse`: draw an circle or ellipse in the current view
+-   `tfArrow`: draw arrow
+-   `tfColorBar`: fill pre-defined layout box with colorbar
+-   `tfGrid`: draw a coordinate grid into the current view
              
 Helper functions:
-          tfPrintCode - print TikZ code
-             tfLimits - compute fitting view limits for discretely sampled data (e.g. images)
+-   `tfPrintCode`: print TikZ code
+-   `tfLimits`: compute fitting view limits for discretely sampled data (e.g. images)
 
