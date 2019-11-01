@@ -22,7 +22,8 @@ tfIsoView
 % draw an arrow from (1, 2) to (2, 1)
 tfPath('green,thick,draw,->', [1 2 ; 2 1])
 % make a text label
-tfPath('', [0.1 0.1], 'node [kitty,anchor=south west,draw,fill=yellow] {Hello Kitty! $E = mc^2$}')
+tfPath('', [0.1 0.1], ...
+    'node [kitty,anchor=south west,draw,fill=yellow] {Hello Kitty! $E = mc^2$}')
 % close layout box and show standard decorations: viewbox and scales
 tfDeco
 
