@@ -2,6 +2,8 @@
 
 tikzfig is a Matlab toolbox to programmatically create figure files in pdf format using the [TikZ/pgf LaTeX package](https://ctan.org/pkg/pgf?lang=en). It exposes part of the TikZ interface to pgf as a Matlab API, so that graphics statements lead to the construction of a LaTeX file which is transparently processed into pdf, including a simple preview mechanism. Additionally, functionality to easily create multi-panel figure layouts is provided.
 
+I created this toolbox, because the capabilities of TikZ go far beyond what can be reasonably achieved with Matlab's graphics, both in versatility and quality. To get an impression, have a look at [TikZ and PGF examples on texample.net](http://www.texample.net/tikz/examples/all/). The drawback is that this toolbox as well as TikZ/pgf itself cannot be used interactively, for fast prototyping. It's purpose is to produce high-quality publication-ready figures.
+
 
 ## Installation
 
@@ -62,7 +64,7 @@ The file `hello.pdf` is created in the current directory:
 The basic structure of a tikzfig script is
 -   `tfInit`: initialize TikZ figure
 -   style commands
--   `tfLayout`: organize the layout of a TikZ figure using boxes arranged over a grid
+-   `tfLayout`: organize the layout of a TikZ figure using boxes (views) arranged over a grid
 -   for each view:
     -   `tfView`: prepare layout box as current view
     -   optionally `tfIsoView`: impose isoscaling on the current view
@@ -81,7 +83,7 @@ Plot commands:
 -   `tfHeatMap`: display matrix as a heat map
 -   `tfImage`: insert image into the current view
 -   `tfContour`: display matrix as a contour plot
--   `tfEllipse`: draw an circle or ellipse in the current view
+-   `tfEllipse`: draw a circle or ellipse in the current view
 -   `tfArrow`: draw arrow
 -   `tfColorBar`: fill pre-defined layout box with colorbar
 -   `tfGrid`: draw a coordinate grid into the current view

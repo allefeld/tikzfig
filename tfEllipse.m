@@ -1,6 +1,6 @@
 function tfEllipse(options, xy, a, b, theta)
 
-% draw an circle or ellipse in the current view
+% draw a circle or ellipse in the current view
 %
 % tfEllipse(options, xy, r)
 % tfEllipse(options, xy, a, b)
