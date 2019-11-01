@@ -39,7 +39,11 @@ tfDeco title graph
 tfRender
 ```
 
+The last command shows a preview in a figure window:
+
 ![result](example-figure.png)
+
+The pdf-file is created in the current directory:
 
 ![result](example-pdf.png)
 
