@@ -52,9 +52,8 @@ if isscalar(blim)
     blim = blim(bi, :);
     olim = tf_get('olim', 'No boxes defined!');
     olim = olim(bi, :);
+    fprintf('tfView %d\n', bi)
 end
-
-fprintf('tfView %d\n', bi)
 
 tf_close_view
 
