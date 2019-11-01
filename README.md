@@ -7,7 +7,7 @@
 
 As with every Matlab toolbox, copy the contents into a directory on your computer and add that directory to the Matlab path.
 
-To create the pdf, the external command `pdflatex` is called, and to generate the preview, the external command `gs` (ghostscript) is called. Both programs therefore need to be installed. The generated LaTeX code depends on the packages `tikz`, `inputenc`, `fontenc`, `cmbright`, and `amsmath`.
+To create the pdf, the external command `pdflatex` is called, and to generate the preview, the external command `gs` (ghostscript) is called. Both programs therefore need to be installed. The generated LaTeX code depends on the packages `tikz`, `inputenc`, `fontenc`, `cmbright`, and `amsmath`. The code has only been tested on Debian GNU/Linux, with La/TeX installed from the texlive packages.
 
 
 ## Example
@@ -87,4 +87,10 @@ Plot commands:
 Helper functions:
 -   `tfPrintCode`: print TikZ code
 -   `tfLimits`: compute fitting view limits for discretely sampled data (e.g. images)
+
+All functions include additional usage information which is accessible via Matlab's `help` command. To use this toolbox effectively, you should however familiarize yourself with TikZ itself.
+
+***
+
+This software is copyrighted © 2019 by Carsten Allefeld and released under the terms of the GNU General Public License, version 3 or later.
 
