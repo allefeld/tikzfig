@@ -1,6 +1,6 @@
 # Create pdf figures using the TikZ/pgf LaTeX package
 
-`tikzfig` is a toolbox to programmatically create figure files in pdf format using the [TikZ/pgf LaTeX package](https://ctan.org/pkg/pgf?lang=en). It exposes part of the TikZ interface to pgf as a Matlab API, so that graphics statements lead to the construction of a LaTeX file which is transparently processed into pdf, including a simple preview mechanism. Additionally, functionality to easily create multi-panel figure layouts is provided.
+`tikzfig` is a Matlab toolbox to programmatically create figure files in pdf format using the [TikZ/pgf LaTeX package](https://ctan.org/pkg/pgf?lang=en). It exposes part of the TikZ interface to pgf as a Matlab API, so that graphics statements lead to the construction of a LaTeX file which is transparently processed into pdf, including a simple preview mechanism. Additionally, functionality to easily create multi-panel figure layouts is provided.
 
 
 ## Example
@@ -22,8 +22,7 @@ tfIsoView
 % draw an arrow from (1, 2) to (2, 1)
 tfPath('green,thick,draw,->', [1 2 ; 2 1])
 % make a text label
-tfPath('', [0.1 0.1], ...
-    'node [kitty,anchor=south west,draw,fill=yellow] {Hello Kitty! $E = mc^2$}')
+tfPath('', [0.1 0.1], 'node [kitty,anchor=south west,draw,fill=yellow] {Hello Kitty! $E = mc^2$}')
 % close layout box and show standard decorations: viewbox and scales
 tfDeco
 
