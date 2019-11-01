@@ -39,7 +39,9 @@ tfDeco title graph
 tfRender
 ```
 
-![result](https://raw.githubusercontent.com/allefeld/tikzfig/master/hello.pdf)
+![result](example-figure.png)
+
+![result](example-pdf.png)
 
 
 ## Usage
