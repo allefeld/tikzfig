@@ -1,16 +1,18 @@
 # Create pdf figures using the TikZ/pgf LaTeX package
 
-`tikzfig` is a Matlab toolbox to programmatically create figure files in pdf format using the [TikZ/pgf LaTeX package](https://ctan.org/pkg/pgf?lang=en). It exposes part of the TikZ interface to pgf as a Matlab API, so that graphics statements lead to the construction of a LaTeX file which is transparently processed into pdf, including a simple preview mechanism. Additionally, functionality to easily create multi-panel figure layouts is provided.
+tikzfig is a Matlab toolbox to programmatically create figure files in pdf format using the [TikZ/pgf LaTeX package](https://ctan.org/pkg/pgf?lang=en). It exposes part of the TikZ interface to pgf as a Matlab API, so that graphics statements lead to the construction of a LaTeX file which is transparently processed into pdf, including a simple preview mechanism. Additionally, functionality to easily create multi-panel figure layouts is provided.
 
 
 ## Installation
 
-As with every Matlab toolbox, copy the contents into a directory on your computer and add that directory to the Matlab path.
+Copy the contents of the repository into a directory on your computer and add that directory to the Matlab path.
 
-To create the pdf, the external command `pdflatex` is called, and to generate the preview, the external command `gs` (ghostscript) is called. Both programs therefore need to be installed. The generated LaTeX code depends on the packages `tikz`, `inputenc`, `fontenc`, `cmbright`, and `amsmath`. The code has only been tested on Debian GNU/Linux, with La/TeX installed from the texlive packages.
+To create the pdf, the external command `pdflatex` is called, and to generate the preview, the external command `gs` (ghostscript) is called. Both programs therefore need to be installed. The generated LaTeX code depends on the packages `tikz`, `inputenc`, `fontenc`, `cmbright`, and `amsmath`. The code has only been tested on Debian GNU/Linux, with LaTeX installed from the `texlive-` packages.
 
 
 ## Example
+
+An example tikzfig script is contained in the file `example.m`:
 
 ```matlab
 % create a figure named "hello" (associated with a Matlab figure window)
@@ -50,14 +52,14 @@ The last command shows a preview in a figure window:
 
 ![result](example-figure.png)
 
-The pdf-file is created in the current directory:
+The file `hello.pdf` is created in the current directory:
 
 ![result](example-pdf.png)
 
 
 ## Usage
 
-The basic structure of a `tikzfig` script is
+The basic structure of a tikzfig script is
 -   `tfInit`: initialize TikZ figure
 -   style commands
 -   `tfLayout`: organize the layout of a TikZ figure using boxes arranged over a grid
