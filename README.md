@@ -1,4 +1,4 @@
-# Create pdf figures using the Ti*k*Z/pgf LaTeX package from Matlab
+# Create Ti*k*Z/pgf figures from Matlab
 
 tikzfig is a Matlab toolbox to programmatically create figure files in pdf format using the [Ti*k*Z/pgf LaTeX package](https://ctan.org/pkg/pgf?lang=en). It exposes part of the Ti*k*Z interface to pgf as a Matlab API, so that graphics statements lead to the construction of a LaTeX file which is transparently processed into pdf, including a simple preview mechanism. Additionally, functionality to easily create multi-panel figure layouts is provided.
 
